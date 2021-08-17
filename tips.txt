@@ -1,0 +1,5 @@
+change start in package.json as nodemon server.js to use nodemon.
+then in terminal type npm start.
+change port to 4321
+
+npx create-react-app name
