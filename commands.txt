@@ -1,0 +1,17 @@
+
+node -v //check node version or node --version
+npm -v //check npm version
+npm init // to setupa project and make a package.json
+npm init -y //shortcut to npm init
+npm install package //to install node.js packages
+npm i package //to install node.js packages
+npm uninstall package // to uninstall node.js packages
+npm u package // to uninstall node.js packages
+npm i package -g //to install node.js packages globally
+npm u package -g //to uninstall node.js packages globally
+npm i package --save-dev //to install as dev dependencies
+npm i package --save //optional
+
+
+example:
+npm i nodemon --save-dev //save dev save it as dev dependency
