@@ -3,3 +3,7 @@ then in terminal type npm start.
 change port to 4321
 
 npx create-react-app name
+
+rconst -constructor with props
+
+in strict mode, global variable is undefined 
