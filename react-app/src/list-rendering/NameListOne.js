@@ -5,7 +5,7 @@ function NameListOne() {
     return (
         <div>
            {
-               names.map(name=> <h2>{name}</h2>   )
+               names.map((name,index)=> <h2 key={index}>{name}</h2>   )
            }
         </div>
     )

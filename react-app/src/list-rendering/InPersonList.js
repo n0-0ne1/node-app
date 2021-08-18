@@ -1,11 +1,12 @@
 import React from 'react'
 
 function InPersonList(props) {
-    let {person}=props
+    let {p}=props
+    console.log(props)
     return (
         <div>
-            <h2 >
-        I am {person.name} with id: {person.id}
+            <h2>
+        I am {p.name} with id: {p.id}
     </h2>
         </div>
     )

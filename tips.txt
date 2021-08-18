@@ -6,6 +6,8 @@ npx create-react-app name
 
 rconst -constructor with props
 
-in strict mode, global variable is undefined 
+in strict mode, global variable is undefined thats why use bind
 
 Difference in output in parent child when fat arrow is used vs when binding is used
+
+wherever use map -> declare a key eg key={index} 

@@ -5,7 +5,7 @@ function Child(props) {
     return (
         <div>
             <h1>Calling PArent from Child</h1>
-            <button onClick={()=>props.callParent("child component")}>Call Parent</button>
+            <button onClick={()=>props.cp("child component")}>Call Parent</button>
         </div>
     )
 }

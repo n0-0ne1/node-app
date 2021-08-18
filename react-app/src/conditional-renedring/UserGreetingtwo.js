@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 
 class UserGreetingtwo extends Component {
-    constructor(props) {
-        super(props)
+    constructor() {
+        super()
     
         this.state = {
              isLoggedIn:false

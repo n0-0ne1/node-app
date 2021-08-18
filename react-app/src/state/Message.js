@@ -18,7 +18,7 @@ class Message extends Component {
     
     render() {
         return (
-            <div className="conatainer">
+            <div>
                 <h1>{this.state.message}</h1>
                 <button className="btn btn-primary" onClick={()=> this.subscribe()}>
                     Subscribe</button>

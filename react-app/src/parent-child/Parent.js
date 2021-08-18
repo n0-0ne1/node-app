@@ -8,18 +8,18 @@ class Parent extends Component {
         this.state = {
             parentName: "Parent"    
         }
-        this.callParent=this.callParent.bind(this)
+        //this.callParent=this.callParent.bind(this)
     }
 
-    callParent(child){
+    callParent=(child)=>{
         console.log(`Calling ${this.state.parentName} from ${child}`);
-        alert(`Calling ${this.state.parentName} from ${child}`)
+        alert(`Calling ${this.state.parentName} from ${child}`) //popup on browser
     }
     
     render() {
         return (
             <div>
-                <Child callParent= {this.callParent} />
+                <Child cp= {this.callParent} />
             </div>
         )
     }

@@ -7,13 +7,13 @@ class EventBind extends Component {
              mesaage:"hello"
         }
         //3rd approach
-        // this.changeMessage=this.changeMessage.bind(this)
+         //this.changeMessage=this.changeMessage.bind(this)
     }
-    // changeMessage =()=>{
+    // changeMessage(){
         
     //     console.log(this)
     //     this.setState({
-    //         message:"Thankyou"
+    //         mesaage:"Thankyou"
     //     })
     // }
 
@@ -31,10 +31,19 @@ class EventBind extends Component {
         return (
             <div>
             <h2>{this.state.mesaage}</h2>
+            {/* basic */}
             {/* <button onClick={this.changeMessage}> Click </button> */}
+
+            {/* 1st approach */}
             {/* <button onClick={this.changeMessage.bind(this)}> Click </button> */}
+
+            {/* 2nd approach */}
             {/* <button onClick={()=>this.changeMessage()}> Click </button> */}
+
+            {/* 3rd approach */}
             {/* <button onClick={this.changeMessage}> Click </button>    */}
+
+            {/* 4th approach */}
             <button onClick={this.changeMessage}> Click </button>   
             </div>
         )

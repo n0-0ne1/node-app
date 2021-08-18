@@ -35,7 +35,7 @@ function App() {
     
     {/* <StyleSheet /> */}
     {/* <StudentList /> */}
-    {/* <Person /> */}
+    <Person />
     {/* <NameListThree /> */}
     {/* <NameListTwo /> */}
     {/* <NameListOne /> */}
@@ -45,7 +45,7 @@ function App() {
     {/* <Fragment /> */}
     {/* <UserGreetingOne /> */}
     {/* <UserGreeting /> */}
-    <Parent />
+    {/* <Parent /> */}
     {/* <EventBind /> */}
     {/* <ClassClick /> */}
     {/* <FunctionClick /> */}
