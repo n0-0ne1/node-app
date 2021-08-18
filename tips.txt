@@ -7,3 +7,5 @@ npx create-react-app name
 rconst -constructor with props
 
 in strict mode, global variable is undefined 
+
+Difference in output in parent child when fat arrow is used vs when binding is used

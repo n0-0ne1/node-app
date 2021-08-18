@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="container">
     
-    <StyleSheet />
+    {/* <StyleSheet /> */}
     {/* <StudentList /> */}
     {/* <Person /> */}
     {/* <NameListThree /> */}
@@ -45,7 +45,7 @@ function App() {
     {/* <Fragment /> */}
     {/* <UserGreetingOne /> */}
     {/* <UserGreeting /> */}
-    {/* <Parent /> */}
+    <Parent />
     {/* <EventBind /> */}
     {/* <ClassClick /> */}
     {/* <FunctionClick /> */}
@@ -67,7 +67,6 @@ function App() {
       <Sample />
       <Sample1 />
       <Hello /> */}
-      {/* <Hello /> */}
     </div>
     
   );

@@ -8,7 +8,7 @@ function Person() {
         {id:3,name:"jt"}
         
     ]
-    const personList=person.map(person=> <InPersonList key={Person.id} person={person} />)
+    const personList=person.map(person=> <InPersonList key={person.id} person={person} />)
     return (
         <div>
             {personList}

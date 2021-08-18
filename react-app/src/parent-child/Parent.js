@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import Child from './Child'
 
 class Parent extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
     
         this.state = {
             parentName: "Parent"    
         }
-        //this.callParent=this.callParent.bind(this)
+        this.callParent=this.callParent.bind(this)
     }
 
     callParent(child){
@@ -19,7 +19,7 @@ class Parent extends Component {
     render() {
         return (
             <div>
-                <Child callParent= {()=>this.callParent()} />
+                <Child callParent= {this.callParent} />
             </div>
         )
     }
