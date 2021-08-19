@@ -4,13 +4,15 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mssql": "^7.2.0",
     "nodemon": "^2.0.12"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon Student.js"
   },
   "repository": {
     "type": "git",
