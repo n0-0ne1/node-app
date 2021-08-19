@@ -1,5 +1,5 @@
 
- import './App.css';
+// import './App.css';
 // import Greet from './components/functional/Greet';
 // import NamedGreet from './components/functional/NamedGreet';
 // import Welcome from './components/class/welcome';
@@ -33,15 +33,19 @@
 // import styles from './Styling/appStyle.module.css'
 // import Form from './form-handling/Form';
 // import FormOne from './form-handling/FormOne';
-import Todo from './ajax-calls/Todo';
-//import LifeCycleParent from './life-cycle/LifeCycleParent';
+// import Todo from './ajax-calls/Todo';
+// import TodoOne from './ajax-calls/TodoOne';
+// import User from './ajax-calls/User';
+// import LifeCycleParent from './life-cycle/LifeCycleParent';
 
 
 function App() {
   return (
     <div className="container">
 
-    <Todo />
+    {/* <User /> */}
+    {/* <TodoOne /> */}
+    {/* <Todo /> */}
     {/* <LifeCycleParent /> */}
     {/* <FormOne /> */}
     {/* <Form /> */}

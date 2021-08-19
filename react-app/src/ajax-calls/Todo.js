@@ -22,6 +22,7 @@ export class Todo extends Component {
     }
     
     render() {
+        
         return (
             
             <div>
@@ -29,9 +30,10 @@ export class Todo extends Component {
               {
                   this.state.todo.map(todo =>(
                    <ul key={todo.id}>
-                       <li>
-                           {todo.title}
-                       </li>
+                       <li>{todo.userId}</li>
+                       <li>{todo.id}</li>
+                       <li>{todo.title}</li>
+                       <li>{todo.completed?"true":"false"}</li>
                    </ul>   
                   ))
               }  
