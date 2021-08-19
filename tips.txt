@@ -11,3 +11,9 @@ in strict mode, global variable is undefined thats why use bind
 Difference in output in parent child when fat arrow is used vs when binding is used
 
 wherever use map -> declare a key eg key={index} 
+
+Whatever you import in app.js will be imported for all the files referred in its return statement
+eg appStyle.css is imported in app.js and accessible in StyleSheet.js
+But this thing is not possible with module.css file. That is the difference between regular and module
+
+Render is a required method in our class
