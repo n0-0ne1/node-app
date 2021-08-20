@@ -1,48 +1,43 @@
-const { response } = require("express")
-const express =require("express")
-const app =express()
-const cors=require("cors")
-const router =express.Router()
+const express = require("express")
+const app = express()
+const router = express.Router();
+const Pool = require('pg').Pool
+const pool = new Pool({
+    user: 'me',
+    host: 'localhost',
+    database: 'api',
+    password: 'Jatingarg1',
+    port: 5432,
+  })
+const cors = require('cors')
 
-const sql =require('mssql')
+app.use(cors()) //to run client and server on same domain
 
-const dbConfig={
-    user:"",
-    password:"",
-    database:"",
-    server:"",
-    options:{
-        trustServerCertificate: true
-    }
-}
+// ? To get the posted data add below two lines
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
-app.use(cors()) // to acces client  and server on same domain
-
-router.get("/",(req,res)=>{
-    res.json({message:"Welcome to Student API"})
-
+router.get("/", (req, res)=>{
+    res.json({message: 'Welcome to Student API'})
 })
-router.get("/student",(req,res)=>{
-    sql.connect(dbConfig,(err)=>{
-        if(err){
-            console.log(err);
+
+router.get("/student", (req, res) => {
+
+    pool.query('Select * from users', (error, results) => {
+        if (error) {
+          throw error
         }
-
-        const request =new sql.Request()
-        request.query("Select * from Student", (error,data)=>{
-            if(error){
-                console.log(error);
-            }
-            response.json(data)
-        })
-    })
+        
+        res.json(results.rows)
+        console.log(results.rows);
+      })
 
 })
 
+app.use("/", router) //address will end with "/"
 
-app.use("/api",router) //http://localhost:4321/api
-const PORT=4321
+const PORT = 5001
 
-app.listen(PORT,()=>{
-    console.log(`Server listening at PORT ${PORT}`);
+app.listen(PORT, () =>{
+    console.log(`Server listening at PORT ${PORT}` )
 })
