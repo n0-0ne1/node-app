@@ -38,7 +38,8 @@
 // import User from './ajax-calls/User';
 // import LifeCycleParent from './life-cycle/LifeCycleParent';
 
-import Routing from "./Routing/Routing";
+import Student from "./ajax-calls/Student";
+// import Routing from "./Routing/Routing";
 
 //const { default: Student } = require("./ajax-calls/Student");
 
@@ -46,8 +47,9 @@ import Routing from "./Routing/Routing";
 function App() {
   return (
     <div className="container">
-
-    <Routing />
+    
+    <Student />
+    {/* <Routing /> */}
     {/* <Student /> */}
     {/* <User /> */}
     {/* <TodoOne /> */}
